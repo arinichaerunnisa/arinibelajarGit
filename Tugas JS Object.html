@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="eng">
+<body>
+    <h3>Tugas Java Script Object</h3>
+    <p id="tugas_object"></p>
+
+<script>
+    const person = {
+        firstname : "John",
+        lastname : "Doe",
+        fullname : function() {
+            return (this.firstname + " " + this.lastname);
+        }
+    };  
+
+   alert (person.fullname())
+   document.getElementById("tugas_object").innerHTML = "His fullname is " + " " + person.fullname();
+
+</script>
