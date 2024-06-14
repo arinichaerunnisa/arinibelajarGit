@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="eng">
+<body>
+    <h3>Java Script Dynamic Type Demo</h3>
+        <p id="pengertian_dynamic"></p>
+        <p id="demo_dynamic"></p>
+
+<script>
+    let dynamic1 = "Tipe data Dynamic akan mengikuti data terbawah yang dipasang baik string, number ataupun lainnya";
+    let x; // x is undefined
+    //x = 5; // x is number
+    x = "arini"; // x is string
+
+    document.getElementById("pengertian_dynamic").innerHTML = dynamic1;
+    document.getElementById("demo_dynamic").innerHTML = x;
+    
+   
+</script>
+<body>
+    <h3>Java Script String and Number Type Demo</h3>
+    <p id="demo"></p>
+    <p id="demo_number"></p>
+    
+    <script>
+        let teks1 = "Tipe data String adalah tipe data yang berhubungan dengan karakter";
+        let teks2 = "Dimana tipe data yang dibatasi dengan simbol tanda petik dua atau satu";
+        let teks3 = "Sementara yang berhubungan dengan angka disebut tipe data Number";
+        let teks4 = "Dimana mewakili seluruh angka, seperti integer dan decimal";
+        let x1 = 090100;
+        let x2 = 3.84;
+        
+        document.getElementById("demo").innerHTML = teks1 + "<br>" + teks2 + "<br>" + teks3 + "<br>" + teks4;
+        document.getElementById("demo_number").innerHTML = x1 + "<br>" + x2;
+    
+</script>
+<body>
+    <h3>Java Script Boolean Type Demo</h3>
+    <p id="pengertian_boolean"></p>
+    <p id="demo_boolean"></p>
+    
+    <script>
+        let boolean1 = "Tipe data Boolean adalah tipe data yang hanya memiliki 2 value, yaitu true atau false"
+        let a = 5;
+        let b = 5;
+        let c = 9; 
+
+        document.getElementById("pengertian_boolean").innerHTML = boolean1;
+        document.getElementById("demo_boolean").innerHTML = (a == b) + "<br>" + (a == c); 
+        
+</script> 
+<body> 
+    <h3>Java Script Array Type Demo</h3>
+    <p id="pengertian_array"></p>
+    <p id="demo_array"></p>
+    
+    <script>
+        let array1 = "Tipe data Array merupakan tipe data yang mampu menyimpan banyak data di dalam satu buah variable";
+        let array2 = "Dimana setiap data memiliki nomornya masing masing sesuai urutannya";
+        const Jabodetabek = ["Jakarta", "Bogor", "Depok", "Tangerang", "Bekasi"];
+
+        document.getElementById("pengertian_array").innerHTML = array1 + "<br>" + array2;
+        document.getElementById("demo_array").innerHTML = Jabodetabek[3];
+
+</script> 
+<body>
+    <h3>Java Script Object Type Demo</h3>
+    <p id="pengertian_object"></p>
+    <p id="demo_object"></p>
+
+    <script>
+        let object1 = "Tipe data Object merupakan tipe data yang dalam penggunaan awalnya dimulai dengan kurung kurawal {}"
+        let object2 = "Object Propeties ditulis dengan cara name:value, dimana dipisahkan dengan tanda koma"
+        let obejct3 = "Dimana disebelah kiri disebut key atau name dan sebelah kanan disebut valuenya"
+        const person = {
+            firstname : "Chaerunnisa",
+            lastname : "Arini",
+            height : "169 cm",
+            eyecolor : "Brown",
+        };
+        document.getElementById("pengertian_object").innerHTML = object1 + "<br>" + object2 + "<br>" + obejct3;
+        document.getElementById("demo_object").innerHTML = person.firstname + " " + person.lastname + "<br>" + person.height + "<br>" + person.eyecolor;
+        
+    </script>
+<body>
+    <h3>Java Script Typeof Type Demo</h3>
+    <p id="pengertian_typeof"></p>
+    <p id="demo_typeof"></p>
+
+    <script>
+        let typeof1 = "Typeof merupakan sebuah operator yang digunakan untuk melihat atau chek tipe data dari sebuah variable yang di definisikan";
+        
+        document.getElementById("pengertian_typeof").innerHTML = typeof1;
+        document.getElementById("demo_typeof").innerHTML = 
+        typeof "" + "<br>" +
+        typeof "Chaerunnisa" + "<br>" + 
+        typeof 24;
+        typeof name ["arini", "chaerunnisa"]; // gabisa
+             
+    </script>
+<body>
+    <h3>Java Script Undefined Type Demo</h3>
+    <p id="pengertian_undefined"></p>
+    <p id="demo_undefined"></p>
+
+    <script>
+        let undefined1 = "Undefined merupakan tipe data default untuk variable yang di deklarasikan tanpa nilai/value";
+        let y; 
+
+        document.getElementById("pengertian_undefined").innerHTML = undefined1;
+        document.getElementById("demo_undefined").innerHTML = y;
+
+    </script>
+<body>
+    <h3>Java Script Null Type Demo</h3>
+    <p id="pengertian_null"></p>
+    <p id="demo_null"></p>
+
+    <script>
+        let null1 = "Null adalah tipe data yang mana dari variable yang sudah ada tidak terdapat value yang dimasukan";
+        let cars = "";
+
+        document.getElementById("pengertian_null").innerHTML = null1;
+        document.getElementById("demo_null").innerHTML = 
+        "the value is: " + cars + "<br>" + "the type is: " + typeof cars
+    </script>
+        
+
